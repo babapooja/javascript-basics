@@ -23,3 +23,48 @@ const totalSalary = staff.reduce((total, person) => {
 }, 0);
 
 reduceResult.innerHTML = `<strong>Total salary spent on staff: </strong>$${totalSalary}`;
+
+// REDUCE FOR OBJECTS
+// cart example
+const cart = [
+    {
+        title: 'Samsung Galaxy S7',
+        price: 599.99,
+        quantity: 1
+    },
+    {
+        title: 'Google pixel',
+        price: 499.99,
+        quantity: 2
+    },
+    {
+        title: 'Xiaomi Redmi Note 2',
+        price: 699.99,
+        quantity: 4
+    },
+    {
+        title: 'Xiaomi Redmi Note 5',
+        price: 299.99,
+        quantity: 5
+    }
+];
+document.querySelector('#cartData').innerHTML = JSON.stringify(cart);
+
+document.querySelector('#cartTotal').addEventListener('click', () => {
+
+    let total = cart.reduce((total, cartItem) => {
+        const { price, quantity } = cartItem;
+        total.totalItems += quantity;
+        total.totalPrice += price;
+        return total;
+    }, {
+        totalItems: 0,
+        totalPrice: 0.0
+    });
+    document.querySelector('#reduceObjects').innerHTML = `Total price $${total.totalPrice} for ${total.totalItems} items`
+
+})
+
+
+
+// github repos example
