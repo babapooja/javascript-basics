@@ -47,3 +47,7 @@ const PERSON = ${JSON.stringify(PERSON)}<br>
 const newPerson = { ...PERSON, city: 'Chicago', name: 'peter' } i.e. ${JSON.stringify(newPerson)}
 </code><br>
 Here we see the PERSON object is unchanged.`
+
+
+// functions
+// spread operator is used in functions when we invoke the functions
