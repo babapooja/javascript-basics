@@ -2,10 +2,8 @@
 const person = {
     name: 'John '
 };
-console.log(person.name);
 
 // square bracket notation
-console.log(person['name']);
 // without inverted commas the key cannot be created as below
 const items = {
     'featured-items': ['item 1', 'item2', 'item 3']

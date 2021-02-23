@@ -27,7 +27,6 @@ objectRO.innerHTML = `<code>const johnDetails = ${JSON.stringify(johnDetails)}</
 // functions
 // use rest when we declare the function
 const getAverage = (name, ...scores) => {
-    console.log(scores);
     return scores.reduce((total, item) => {
         return total += item
     }, 0) / scores.length;
