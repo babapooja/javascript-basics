@@ -16,11 +16,13 @@
         <div id="ages"></div>
         <div id="names"></div>
     </div>
+    <hr>
     <!-- UNIQUE VALUES -->
     <div>
         <h2 style="margin-bottom: 5px">Unique Values: </h2>
         <div id="unique"></div>
     </div>
+    <hr>
     <!-- DYNAMIC OBJECT KEYS -->
     <div>
         <h2>Dynamic Object Keys: <button type="button" id="updateJSON">Update JSON</button></h2>
@@ -28,20 +30,31 @@
             name: 'John '
             }</div>
     </div>
+    <hr>
     <!-- FIND AND FILTER FUNCTIONS -->
     <div>
         <h2 style="margin-bottom: 5px;">Find and Filter Functions:</h2>
         <button id="filter">Filter Data</button> &nbsp;&nbsp;
 
-        <input type="text" value="" name="findText" placeholder="type search text" />&nbsp;<button id="find">Find</button>
+        <input type="text" value="" name="findText" placeholder="type search text" />&nbsp;<button
+            id="find">Find</button>
         <p id="ffOriginalData"></p>
         <div id="findFilter"></div>
     </div>
+    <hr>
+    <!-- REDUCE BASICS -->
+    <div>
+        <h2 style="margin-bottom: 5px;">Reduce Basics:</h2>
+        <p style="margin-top: 0" id="reduce-data"></p>
+        <div id="reduce"></div>
+    </div>
+    <hr>
 
     <script src="./src/map.js"></script>
     <script src="./src/unique-values.js"></script>
     <script src="./src/dynamic-object-keys.js"></script>
     <script src="./src/find-and-filter.js"></script>
+    <script src="./src/reduce.js"></script>
 </body>
 
 </html>
